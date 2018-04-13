@@ -155,12 +155,15 @@ public class formU3A2_Monogram extends javax.swing.JFrame {
     }//GEN-LAST:event_textNameMiddleActionPerformed
 
     private void buttonCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCreateActionPerformed
+       // declare variables
         String first, middle, last;
+        // get names from text feilds
         first = textNameFirst.getText().toLowerCase();
         middle = textNameMiddle.getText().toLowerCase();
         last = textNameLast.getText().toUpperCase();
-        System.out.println (first);
-        System.out.println (last);
+        //System.out.println (first);
+       //System.out.println (last);
+        // create Monogram
         labelMonogram.setText ("Your Monogram is: " + first.charAt(0) + last.charAt(0) + middle.charAt(0));
     }//GEN-LAST:event_buttonCreateActionPerformed
 
